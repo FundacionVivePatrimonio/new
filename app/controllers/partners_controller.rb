@@ -63,7 +63,7 @@ class PartnersController < ApplicationController
     end
 
     # Only allow a list of trusted parameters through.
-    def book_params
+    def partner_params
       params.require(:partner).permit(:name, :adress, :commune, :telephone, :mobile)
     end
 end
